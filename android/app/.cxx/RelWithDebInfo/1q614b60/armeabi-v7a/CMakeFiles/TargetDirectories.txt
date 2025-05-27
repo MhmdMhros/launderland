@@ -1,0 +1,2 @@
+C:/Users/Abdul/launderland/launderland-1/android/app/.cxx/RelWithDebInfo/1q614b60/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Abdul/launderland/launderland-1/android/app/.cxx/RelWithDebInfo/1q614b60/armeabi-v7a/CMakeFiles/rebuild_cache.dir

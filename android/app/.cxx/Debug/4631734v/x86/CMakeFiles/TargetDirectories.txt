@@ -1,0 +1,2 @@
+/Users/marwanomar/launderland/android/app/.cxx/Debug/4631734v/x86/CMakeFiles/edit_cache.dir
+/Users/marwanomar/launderland/android/app/.cxx/Debug/4631734v/x86/CMakeFiles/rebuild_cache.dir

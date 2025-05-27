@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "809490721079",
+    "firebase_url": "https://launderlandapp-7dc4f-default-rtdb.firebaseio.com",
+    "project_id": "launderlandapp-7dc4f",
+    "storage_bucket": "launderlandapp-7dc4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809490721079:android:91438523e77ffa2d4692b2",
+        "android_client_info": {
+          "package_name": "com.kenrys.launderland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809490721079-6mqtda47qgbgjqohtj4vrqohq5f1v86k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kenrys.launderland",
+            "certificate_hash": "2d1ba7900e05a5211015ac5f79b3a230f777c2a1"
+          }
+        },
+        {
+          "client_id": "809490721079-nh2ucvds754pmiug0egqqvtrl5iec02u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kenrys.launderland",
+            "certificate_hash": "169cd69e878a8bf9871f6dac82d77b578b3e2a84"
+          }
+        },
+        {
+          "client_id": "809490721079-qo0njl2qdb81tjd70vbik65rm17t1s26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kenrys.launderland",
+            "certificate_hash": "59c8ded90db59339070d7a00dd6abdff826dff6d"
+          }
+        },
+        {
+          "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOftXGNnY2m5Ky67laftahhoor71ayPqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "809490721079-28rfoqua51b78a8hnjskmjv87jvmjf5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kenrys.launderland"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809490721079:android:45ea7bc9c3d621c54692b2",
+        "android_client_info": {
+          "package_name": "com.launderland.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809490721079-h9tkjtf09p9253mp3ropm68dlnhjvq7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.launderland.delivery",
+            "certificate_hash": "4ba00b1d2237ba0b5b40fb258b59551d157292a3"
+          }
+        },
+        {
+          "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOftXGNnY2m5Ky67laftahhoor71ayPqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "809490721079-28rfoqua51b78a8hnjskmjv87jvmjf5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kenrys.launderland"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809490721079:android:40fab882fc9254e34692b2",
+        "android_client_info": {
+          "package_name": "com.launderland.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOftXGNnY2m5Ky67laftahhoor71ayPqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809490721079-fr210snv07q0orm20lvo285e27rgtn0f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "809490721079-28rfoqua51b78a8hnjskmjv87jvmjf5b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kenrys.launderland"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

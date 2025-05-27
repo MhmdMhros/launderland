@@ -1,0 +1,2 @@
+C:/Users/H Dos/launderland/android/app/.cxx/RelWithDebInfo/2d1f7249/x86/CMakeFiles/edit_cache.dir
+C:/Users/H Dos/launderland/android/app/.cxx/RelWithDebInfo/2d1f7249/x86/CMakeFiles/rebuild_cache.dir
