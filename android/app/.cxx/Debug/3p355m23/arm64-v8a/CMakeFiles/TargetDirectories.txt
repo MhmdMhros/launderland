@@ -1,0 +1,2 @@
+C:/Users/H Dos/launderland/android/app/.cxx/Debug/3p355m23/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/H Dos/launderland/android/app/.cxx/Debug/3p355m23/arm64-v8a/CMakeFiles/rebuild_cache.dir

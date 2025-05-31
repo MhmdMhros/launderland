@@ -1,0 +1,2 @@
+C:/Flutter Framework/Projects/launderland/android/app/.cxx/RelWithDebInfo/5e1c431i/x86_64/CMakeFiles/edit_cache.dir
+C:/Flutter Framework/Projects/launderland/android/app/.cxx/RelWithDebInfo/5e1c431i/x86_64/CMakeFiles/rebuild_cache.dir
