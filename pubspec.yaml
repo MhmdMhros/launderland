@@ -1,7 +1,7 @@
 name: launder_land
 description: "A new Flutter project."
 publish_to: "none"
-version: 1.4.1+1.4.1
+version: 1.4.2+1.4.2
 environment:
   sdk: ^3.5.2
 
