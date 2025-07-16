@@ -52,9 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void getWalletBalance() async {
     Operations().getWalletBalance().then((balance) {
-      if (mounted) {
+      if (mounted && balance != null) {
         setState(() {
-          walletBalance = balance!;
+          walletBalance = balance;
         });
       }
     });

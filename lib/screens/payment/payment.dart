@@ -15,7 +15,11 @@ import 'package:launder_land/utils/operations.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class PaymentPage extends ConsumerStatefulWidget {
-  const PaymentPage({super.key, required this.amountToPay, this.isAddMoney = false, required this.carts});
+  const PaymentPage(
+      {super.key,
+      required this.amountToPay,
+      this.isAddMoney = false,
+      required this.carts});
 
   final double amountToPay;
   final bool isAddMoney;
@@ -120,14 +124,16 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                 (e) {
                   return _buildPaymentOption(
                       e,
-                      e.slug == 'cod' ? 'assets/icons/pngMoney.png' : 'assets/icons/pngCreditCard.png',
+                      e.slug == 'cod'
+                          ? 'assets/icons/pngMoney.png'
+                          : 'assets/icons/pngCreditCard.png',
                       selectedPaymentMethod == e);
                 },
               ),
             const SizedBox(height: 5),
             _buildWalletOption(),
-            const SizedBox(height: 16),
-            _buildCouponSection(),
+            // const SizedBox(height: 16),
+            // _buildCouponSection(),
             const SizedBox(height: 16),
             _buildPaymentSummary(),
             const SizedBox(height: 16),
@@ -141,7 +147,8 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
     );
   }
 
-  Widget _buildPaymentOption(PaymentMethodsModel paymentMethod, String image, bool isSelected) {
+  Widget _buildPaymentOption(
+      PaymentMethodsModel paymentMethod, String image, bool isSelected) {
     final isSelectedMethod = selectedPaymentMethod == paymentMethod;
 
     return InkWell(
@@ -174,7 +181,9 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                 )
               : null,
           child: SvgPicture.asset(
-            isSelectedMethod ? 'assets/icons/checked_radio.svg' : 'assets/icons/unchecked_radio.svg',
+            isSelectedMethod
+                ? 'assets/icons/checked_radio.svg'
+                : 'assets/icons/unchecked_radio.svg',
           ),
         ),
       ),
@@ -244,14 +253,16 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                 children: [
                   Text(
                     'EGP ${walletBalance.toStringAsFixed(2)}',
-                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+                    style: const TextStyle(
+                        fontSize: 14, fontWeight: FontWeight.w400),
                   ),
                   Container(
                     width: 90, // تحديد العرض
                     height: 25, // تحديد الارتفاع
                     decoration: BoxDecoration(
                       color: const Color(0xFF21295A), // تحديد اللون الخلفي
-                      borderRadius: BorderRadius.circular(12), // تحديد الزوايا الدائرية
+                      borderRadius:
+                          BorderRadius.circular(12), // تحديد الزوايا الدائرية
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 10, right: 10),
@@ -325,16 +336,23 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
           ),
         ),
         const SizedBox(height: 8),
-        _buildSummaryRow('Cart Total', 'EGP ${cartTotal.toStringAsFixed(2)}', Colors.black),
-        _buildSummaryRow('Discount', 'EGP ${discountTotal.toStringAsFixed(2)}', Colors.orange),
-        _buildSummaryRow('Delivery Fee', 'EGP ${deliveryFee.toStringAsFixed(2)}', Colors.black),
-        _buildSummaryRow('Value Added Tax 14%', 'EGP ${tax.toStringAsFixed(2)}', Colors.black),
-        _buildSummaryRow('Total', 'EGP ${total.toStringAsFixed(2)}', Colors.black, isBold: true),
+        _buildSummaryRow(
+            'Cart Total', 'EGP ${cartTotal.toStringAsFixed(2)}', Colors.black),
+        _buildSummaryRow('Discount', 'EGP ${discountTotal.toStringAsFixed(2)}',
+            Colors.orange),
+        _buildSummaryRow('Delivery Fee',
+            'EGP ${deliveryFee.toStringAsFixed(2)}', Colors.black),
+        _buildSummaryRow('Value Added Tax 14%', 'EGP ${tax.toStringAsFixed(2)}',
+            Colors.black),
+        _buildSummaryRow(
+            'Total', 'EGP ${total.toStringAsFixed(2)}', Colors.black,
+            isBold: true),
       ],
     );
   }
 
-  Widget _buildSummaryRow(String label, String value, Color color, {bool isBold = false}) {
+  Widget _buildSummaryRow(String label, String value, Color color,
+      {bool isBold = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: Row(
@@ -363,7 +381,10 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
 
   double get cartTotal => widget.carts.fold(
         0.0,
-        (sum, cart) => sum + cart.variants.fold(0.0, (variantSum, v) => variantSum + v.price) * cart.quantity,
+        (sum, cart) =>
+            sum +
+            cart.variants.fold(0.0, (variantSum, v) => variantSum + v.price) *
+                cart.quantity,
       );
 
   double get discountTotal => widget.carts.fold(
@@ -393,7 +414,9 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
         child: ElevatedButton(
           onPressed: () {
             dev.log('${ref.watch(orderProvider)}');
-            Operations().postOrder(ref.watch(orderProvider).toJson(), context).then(
+            Operations()
+                .postOrder(ref.watch(orderProvider).toJson(), context)
+                .then(
               (value) {
                 dev.log('$value');
                 if (value != null) {
@@ -411,15 +434,18 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                         showModalBottomSheet(
                           context: context,
                           shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                            borderRadius:
+                                BorderRadius.vertical(top: Radius.circular(20)),
                           ),
                           backgroundColor: Colors.white,
                           isScrollControlled: true,
                           builder: (BuildContext context) {
                             return SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.4, // Set height to 35% of the screen
+                              height: MediaQuery.of(context).size.height *
+                                  0.4, // Set height to 35% of the screen
                               width: double.infinity,
-                              child: const OrderPlacedScreen(), // Place your OrderPlacedScreen here
+                              child:
+                                  const OrderPlacedScreen(), // Place your OrderPlacedScreen here
                             );
                           },
                         );
@@ -437,9 +463,12 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                               type: 'Charge',
                               items: [
                                 Items(
-                                  amount_cents: widget.amountToPay.toInt() * 100,
-                                  description: 'Wallet Recharge - ${widget.amountToPay.toInt()}',
-                                  name: 'Wallet Recharge - ${widget.amountToPay.toInt()}',
+                                  amount_cents:
+                                      widget.amountToPay.toInt() * 100,
+                                  description:
+                                      'Wallet Recharge - ${widget.amountToPay.toInt()}',
+                                  name:
+                                      'Wallet Recharge - ${widget.amountToPay.toInt()}',
                                   quantity: '1',
                                 )
                               ],
@@ -448,14 +477,16 @@ class _PaymentPageState extends ConsumerState<PaymentPage> {
                       (url) {
                         dev.log(url);
                         if (mounted) {
-                          pushScreenWithoutNavBar(context, PaymentWebview(url: url));
+                          pushScreenWithoutNavBar(
+                              context, PaymentWebview(url: url));
                         }
                       },
                     );
                   }
                 } else {
                   if (mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error placing order')));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('Error placing order')));
                   }
                 }
               },
